@@ -1,0 +1,117 @@
+:root {
+    --body-bg: black;
+    --box-bg: hsl(216, 12%, 8%);
+    --circle-bg: hsl(213, 19%, 18%);
+    --circle-color: hsl(216, 12%, 54%);    
+  }
+
+body {
+    /* background-color: ; */
+    background-color: var(--body-bg);
+    color: white;
+    font-size: 15px;
+    font-family: 'Overpass', sans-serif;
+}
+
+.circle {
+    background-color: var(--circle-bg);
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+
+    /* code to align star in center of circle */
+    vertical-align: middle;
+    text-align: center;
+    display: table-cell;
+}
+
+.results {
+    margin: 10px auto 0 auto;
+}
+
+.box {
+    background-color: var(--box-bg);
+    padding: 3%;
+    border-radius: 25px;
+    width: 27%;
+    margin: auto;
+}
+
+@media only screen and (min-width: 768px) {
+    .box {
+        
+        background-color: var(--box-bg);
+        /* margin: 0 auto 0 auto; */
+        padding: 3%;
+
+        margin: auto;
+        
+    }
+} 
+
+.content h1 {
+    color: hsl(0, 0%, 100%);
+}
+
+.content p {
+    color: hsl(217, 12%, 63%);
+}
+
+.desktop-thankyou-content {
+    display: none;
+    text-align: center;
+}
+
+.rating-selector {
+    background-color: var(--circle-bg);
+    color: var(--circle-color);
+    margin-left: 15px;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    border: none;
+}
+
+.rating-selector:focus {
+    color: hsl(0, 0%, 100%);
+    background-color: hsl(217, 12%, 63%);
+}
+
+.rating-selector:hover {
+    color: hsl(0, 0%, 100%);
+    background-color: hsl(25, 97%, 53%);
+}
+
+.rating-state {
+    text-align: center;
+}
+
+.submit {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#close {
+    color:hsl(217, 12%, 63%);
+}
+
+#selection-results {
+    display: inline-block;
+    background-color: var(--circle-bg);
+    color: hsl(25, 97%, 53%);
+    line-height: 2rem;
+    padding: 0 20px;
+    border-radius: 25px;
+    /* width: 10rem; */
+}
+
+#submit-btn {
+    background-color:hsl(25, 97%, 53%);
+    color: hsl(0, 0%, 100%);
+    width: 300px;
+    height: 3rem;
+    border-radius: 50px;
+    font-weight: 700;
+    letter-spacing: 4px;
+    border: none;
+}
